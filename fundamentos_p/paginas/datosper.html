@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+  <title style="color:white;">Ingreso de Datos</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="/fundamentos_p/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+  <!-- Stilo de formato -->
+  <link href="https://stackpath.bootstrapcdn.com/bootrtrap/4.3.1/css/bootrtrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+  <link href="/fundamentos_p/css/jquery.datetimepicker.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light" background="/fundamentos_p/imagenes/fondo.jpg">
+
+  <div class="container" aling="center">
+    <div class="py-5 text-center" aling="center">
+      <img class="d-block mx-auto mb-4" src="/fundamentos_p/imagenes/logo.png" alt="" width="72" height="72">
+      <h2 style="color:white;">INGRESE DATOS DEL FORMULARIO</h2>
+    </div>
+<center> 
+    <div class="col-md-8 order-md-1" aling="center">
+      <h4 style="color:white;" class="mb-3" aling="center">VEHÍCULO </h4>
+
+      <form id="form1" action="/fundamentos_p/php/registrar.php" method="post" class="needs-validation" validate>
+
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="placa" style="color:white;"> PLACA</label>
+            <input name="placa" input type="text" class="form-control" id="placa" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Ingrese la Placa.
+            </div>
+          </div>
+        </center>
+
+<center> 
+          <div class="col-md-8 order-md-1">
+            <h4 style="color:white;" class="mb-3">INFORMACION PERSONAL </h4>
+
+            <form id="form1" action="/fundamentos_p/php/registrar.php" method="post" class="needs-validation"
+              novalidate>
+
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="nombre" style="color:white;"> NOMBRE</label>
+                  <input name="nombre" input type="text" class="form-control" id="nombre" placeholder="" value=""
+                    required>
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="apellido" style="color:white;">APELLIDO</label>
+                  <input name="apellido" input type="text" class="form-control" id="apellido" placeholder="" value=""
+                    required>
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="mb-3">
+                <label for="correo" style="color:white;">EMAIL <span class="text-muted"></span></label>
+                <input name="correo" input type="email" class="form-control" id="correo" placeholder="" required>
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="direccion" style="color:white;">DIRECCION</label>
+                <input name="direccion" input type="text" class="form-control" id="direccion" placeholder=" " required>
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-7 mb-3">
+                  <label for="zona" style="color:white;">ZONA DE REVISION</label>
+                  <select class="custom-select d-block w-100" name="zona" id="zona" required>
+                    <option value="Guamani"> Centro Mixto Guamani</option>
+                    <option value="Chillogallo">Centro Livianos Via Chillos </option>
+                    <option value="Guamani">Centro Liv.San Isidro Inca</option>
+                    <option value="Chillogallo">Centro Mixto Carapungo </option>
+                    <option value="Guamani">Centro Livianos Guajalo</option>
+                    <option value="Chillogallo">Centro Livianos Florida Alta </option>
+                    <option value="Chillogallo">Matriculacion Quitumbe</option>
+                    <option value="Chillogallo">Matriculacion Bicentenario</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+
+                <div class="col-md-5 mb-6">
+                  <label for="fecha" style="color:white;">FECHA DE TURNO</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <button type="button" id="toggle" class="input-group-text"> <i class="fa fa-calendar-alt">
+                        </i></button>
+                      <input name="fecha" input type="text" id="fecha" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </center>
+
+
+              <div class="row">
+              </div>
+
+
+
+              <div class="row">
+
+              </div>
+              <div class="row">
+
+
+              </div>
+
+
+              <hr class="mb-4">
+              <CENTER>
+
+
+                <button class="btn btn-primary btn-lg btn-block" type="submit">REGISTRAR</button>
+
+
+              </CENTER>
+            </form>
+          </div>
+        </div>
+
+
+    </div>
+
+    <script src="/fundamentos_p/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/fundamentos_p/popper/popper.min.js"></script>
+    <script src="/fundamentos_p/bootstrap4/js/bootstrap.min.js"></script>
+    <script src="/fundamentos_p/js/codigo.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootrtrapcdn.com/bootrtrap/4.3.1/js/bootrtrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="/fundamentos_p/js/jquery.datetimepicker.full.min.js"></script>
+
+
+    <!-- Validacion Fecha y Hora -->
+    <script>
+
+      $('#fecha').datetimepicker({
+        timepicker: true,
+        datepicker: true,
+        format: 'Y-m-d H:i',  // formato de fecha 
+        yearStart: 2020,
+        yearEnd: 2020,
+        hours12: false,
+        step: 30,
+        allowTimes: ['07:00', '07:30', '8.00', '8:30', '9:00', '10:30', '11:00', '11:30', '12:30', '13:00'],
+        theme: 'dark',
+        disabledWeekDays: [0, 6]
+
+      })
+
+
+      $('#toggle').on('click', function () {
+        $('#fecha').datetimepicker('toggle')
+      })
+
+    </script>
+</body>
+
+<!-- Pie de Pagina -->
+<footer>
+  <center>
+    <div class="p-4">
+      <h4 style="color:white;" font size=15 class="font-italic">Siguenos En Nuestras Redes Sociales</h4>
+      <ol class="list-unstyled">
+        <a href="https://www.youtube.com/"><img src="/fundamentos_p/imagenes/you.png" width="50" height="50"></a></li>
+        <a href="https://www.facebook.com/"><img src="/fundamentos_p/imagenes/face.png" width="50" height="50"></a></li>
+        <a href="https://twitter.com/?lang=es"><img src="/fundamentos_p/imagenes/twi.png" width="50" height="50"></a>
+        </li>
+      </ol>
+    </div>
+  </center>
+  <br>
+
+</footer>
+
+</html>
